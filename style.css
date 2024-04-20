@@ -1,0 +1,33 @@
+    #ed{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    animation-name: edgaranimation;
+    animation-duration: 2s;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;
+    z-index: 1;
+    }
+    #dyno{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        top: 250px;
+        left: 600px;
+}
+@keyframes edgaranimation{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(300px, -200px);
+    }
+    75%{
+        transform: translate(550px, 0px) rotate(0deg);
+    }
+    100%{
+        transform: translate(550px, 0px) rotate(720deg);
+    }
+    }
